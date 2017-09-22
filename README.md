@@ -1,9 +1,9 @@
 # Java-interview
 
-[Java](Content/Java)
+[Java](Content/Java.md)
 
-[操作系统](Content/OS)
+[操作系统](Content/OS.md)
 
-[HTTP](Content/HTTP)
+[HTTP](Content/HTTP.md)
 
-[TCP](Content/TCP)
+[TCP](Content/TCP.md)
