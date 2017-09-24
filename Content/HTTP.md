@@ -124,3 +124,20 @@ __503__：服务器正忙
    Content-Length：实体主体的的字节数
 
    Content-Range：实体主体的位置范围，一般用于发出部分请求时使用
+
+
+
+cookie和session的区别
+
+cookie是Web服务器发送给浏览器的一块信息。浏览器会在本地文件中给每一个Web服务器存储cookie。以后浏览器在给特定的Web发请求的时候，同时会发送所有为该服务器存储的cookie。 
+
+区别：
+
++ 无论客户端浏览器做怎么样的设置，session都应该能正常的工作。客户端可以选择禁用cookie，但是，session仍然是能继续工作的，因为客户端无法禁用服务端的session。
++ 在存储的数据数量方面session和cookies也是不一样的，session能够存储人意的Java对象，cookie只能存储String类型的对象。
+
+
+
+redirect和forward的区别
+
+sendRedirect()方法会创建一个新的请求，二forward()方法只是把请求转发到一个新的目标上。重定向以后，之前请求作用域范围以内的对象就失效了，因为会产生一个新的请求，而转发之后，之前请求作用域范围以内的对象好是能访问的。一般认为sendRedirect比forward慢。
